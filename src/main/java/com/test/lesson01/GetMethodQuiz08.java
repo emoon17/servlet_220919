@@ -66,6 +66,8 @@ public class GetMethodQuiz08 extends HttpServlet{
 		
 		//출력
 		
+		// 테스트용 주석 추가 
+		
 		
 		
 	}
