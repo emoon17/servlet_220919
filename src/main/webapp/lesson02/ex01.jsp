@@ -42,9 +42,7 @@
 <%= num + 200 %> <br>
 <%= getHelloWorld() %>
 
-<%= 
-	List<Integer> list = new ArrayList<>();
-%>
+
 
 </body>
 </html>
