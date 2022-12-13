@@ -68,7 +68,10 @@
 			        } 
 			    };
 			    list.add(map);
-				
+				// for (Map<String, Object> item : list) {
+					
+				//	} //
+			    
 			    Iterator<Map<String, Object>> iter = list.iterator();
 			    while (iter.hasNext()) {
 			    	Map<String, Object> book = iter.next();
@@ -77,8 +80,8 @@
 				%>
 					<tr>
 						<td class="col-1" ><%= book.get("id") %></td>
-						<td class="col-3"><%= book.get("image") %></td>
-						<td class="col-2"> <a href="<%=book.get("title")%>"></a></td>
+						<td class="col-3"><img src="<%= book.get("image") %>" alt="표지" width="50"></td>
+						<td class="col-2"> <a href="/lesson02/quiz08_1.jsp?id=<%= book.get("id") %>"><%= book.get("title")%></a></td>
 					</tr>
 					<%
 					
