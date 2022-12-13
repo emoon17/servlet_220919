@@ -9,7 +9,7 @@
 <body>
 	<%
 	int cm = Integer.valueOf(request.getParameter("length"));
-	
+	 
 	// checkbox, 여러 값 파라미터
 	String [] types = request.getParameterValues("type");
 	
