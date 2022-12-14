@@ -54,12 +54,12 @@ list.add(map);
 					</thead>
 					<tbody>
 					<%
-			Map<String, String> target = new HashMap<>();
+			String category = request.getParameter("category");
 			Iterator<Map<String, String>> iter = list.iterator();
 			while (iter.hasNext()) {
 				Map<String, String> tv = iter.next();
-				
-			
+				// 카테고리가 null일 때 (전체) 또는 카테고리명이 일치할 때	
+				if (category == null || tv.get("category").equals(category)) {
 			%>
 						<tr>
 							<td><%= tv.get("ch") %></td>
@@ -67,6 +67,7 @@ list.add(map);
 							<td><%= tv.get("category") %></td>
 						</tr>
 						<%
+				}
 			}
 						%>
 					</tbody>

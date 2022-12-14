@@ -3,7 +3,7 @@
 <nav class="nav bg-danger d-flex align-items-center">
 	<ul class="nav nav-fill w-100">
 		<il class="nav-item ">
-		<a href="/lesson03/quiz01/template.jsp?category=전체"
+		<a href="/lesson03/quiz01/template.jsp"
 			class="nav-link text-white font-weight-bold ">전체</a></il>
 		<il class="nav-item">
 		<a href="/lesson03/quiz01/template.jsp?category=지상파"
