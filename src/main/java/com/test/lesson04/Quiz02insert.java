@@ -16,7 +16,7 @@ public class Quiz02insert extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		//타입
-		response.setContentType("text/plain");
+//		response.setContentType("text/plain"); - 필요없어서 지워두 됌
 		
 		// request 파라미터
 		String name = request.getParameter("name");
@@ -42,6 +42,6 @@ public class Quiz02insert extends HttpServlet {
 		ms.disconnect();
 		
 		// 사용자 목록 페이지에 넘기기 (리다이렉트)
-		response.sendRedirect("/lesson04/quiz02/quiz02_1.jsp");
+		response.sendRedirect("/lesson04/quiz02/quiz02.jsp");
 	}
 }

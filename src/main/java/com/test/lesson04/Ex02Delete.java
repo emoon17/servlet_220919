@@ -30,6 +30,7 @@ public class Ex02Delete extends HttpServlet{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 		// db 연결 해제 
 		ms.disconnect();
 		// 사용자 목록화면으로 이동 - redirect
